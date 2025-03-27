@@ -22,9 +22,12 @@ Automated Scenarios:
 I have automated both Task 1 (Primary) and Task 2 (Optional). By default, the TestRunner file only executes Task 1 (Primary).
 
 To switch between tasks, update the features path in TestRunner.java:
+
 Task 1 (Primary):
 features = "src/test/resources/features/pay_bills.feature"
 Task 2 (Optional):
 features = "src/test/resources/features/locations.feature"
 
+OR to run both tasks in a sequence use below
+features = "src/test/resources/features
 If you have any questions or face any difficulties, feel free to reach out.

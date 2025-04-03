@@ -15,7 +15,9 @@ public class HomePage extends BasePage {
 	@FindBy(partialLinkText = "Settings")
 	private WebElement settingsLink;
 
-	@FindBy(linkText = "Pay bills")
+	//Used xpath with icon class (icon-J21-List-Bill-rounded) which is unique to the "Pay bills" menu item.
+	//and it also Checks for href containing billpay (which is consistent across languages).
+	@FindBy(xpath = "//a[contains(@href, 'billpay') and .//span[contains(@class, 'icon-J21-List-Bill-rounded')]]")
 	private WebElement payBillLink;
 
 	@FindBy(linkText = "Find locations")

@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//a[contains(@href, 'billpay') and .//span[contains(@class, 'icon-J21-List-Bill-rounded')]]")
 	private WebElement payBillLink;
 
-	@FindBy(xpath = "//a[contains(@href, 'find-locations') and .//span[contains(@class, 'nav-item__title')]]")
+	@FindBy(linkText = "Find locations")
 	private WebElement findLocationsLink;
 
 	public void clickFindLocations() {

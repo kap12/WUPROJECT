@@ -12,7 +12,7 @@ public class HomePage extends BasePage {
 	@FindBy(id = "hamburger-nav-item")
 	private WebElement burgerMenu;
 
-	@FindBy(partialLinkText = "Settings")
+	@FindBy(xpath = "//a[contains(@href, 'settings') and .//span[contains(@class, 'nav-item__title')]]")
 	private WebElement settingsLink;
 
 	//Used xpath with icon class (icon-J21-List-Bill-rounded) which is unique to the "Pay bills" menu item.
@@ -20,7 +20,7 @@ public class HomePage extends BasePage {
 	@FindBy(xpath = "//a[contains(@href, 'billpay') and .//span[contains(@class, 'icon-J21-List-Bill-rounded')]]")
 	private WebElement payBillLink;
 
-	@FindBy(linkText = "Find locations")
+	@FindBy(xpath = "//a[contains(@href, 'find-locations') and .//span[contains(@class, 'nav-item__title')]]")
 	private WebElement findLocationsLink;
 
 	public void clickFindLocations() {
